@@ -54,20 +54,20 @@ export default defineConfig({
         ],
       },
     },
-    {
-      resolve: "@medusajs/medusa/payment",
-      key: Modules.PAYMENT,
-      options: {
-        providers: [
-          {
-            resolve: "@medusajs/medusa/payment-stripe",
-            id: "stripe",
-            options: {
-              apiKey: process.env.STRIPE_API_KEY,
-            },
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: "@medusajs/medusa/payment",
+    //   key: Modules.PAYMENT,
+    //   options: {
+    //     providers: [
+    //       {
+    //         resolve: "@medusajs/medusa/payment-stripe",
+    //         id: "stripe",
+    //         options: {
+    //           apiKey: process.env.STRIPE_API_KEY,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
   ],
 });
